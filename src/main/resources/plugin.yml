@@ -1,4 +1,4 @@
-name: HypeCoreRolePlayCommands
+name: HypeCoreRPCommands
 version: '${version}'
 main: ru.tnkv.hcrpcmds.Main
 api-version: 1.19
@@ -11,15 +11,15 @@ commands:
     usage: /dice
     permission: hcrp.use
     permission-message: "§cНет прав."
-    description: "Бросок костей, через пробел можно указать максимально возможное значение."
+    description: "Бросить кости, через пробел можно указать максимальное возможное значение."
    try:
      usage: /try
-     description: "Попытка сделать что-то, через пробел можно указать."
+     description: "Попытка сделать что-то, через пробел можно указать действие."
      permission: hcrp.use
      permission-message: "§cНет прав."
    me:
      usage: /me
-     description: "Показать что выполняешь какое-то действие."
+     description: "Показать, что выполняешь какое-то действие."
      permission: hcrp.use
      permission-message: "§cНет прав."
    todo:

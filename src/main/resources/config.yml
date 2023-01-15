@@ -1,4 +1,5 @@
-dice-radius: 100
-me-radius: 100
-try-radius: 100
-todo-radius: 100
+radius:
+  dice: 100
+  me: 100
+  try: 100
+  todo: 100
