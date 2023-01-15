@@ -1,0 +1,29 @@
+name: HypeCoreRolePlayCommands
+version: '${version}'
+main: ru.tnkv.hcrpcmds.Main
+api-version: 1.19
+authors: [ tnkv, Zoga_com ]
+website: hypecloud.ru
+
+
+commands:
+   dice:
+    usage: /dice
+    permission: hcrp.use
+    permission-message: "§cНет прав."
+    description: "Бросок костей, через пробел можно указать максимально возможное значение."
+   try:
+     usage: /try
+     description: "Попытка сделать что-то, через пробел можно указать."
+     permission: hcrp.use
+     permission-message: "§cНет прав."
+   me:
+     usage: /me
+     description: "Показать что выполняешь какое-то действие."
+     permission: hcrp.use
+     permission-message: "§cНет прав."
+   todo:
+     usage: /todo
+     description: "Выполнять действие во время выполнения другого."
+     permission: hcrp.use
+     permission-message: "§cНет прав."
