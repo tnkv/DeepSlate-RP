@@ -4,10 +4,7 @@ import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-import ru.tnkv.dsrp.commands.DiceCommand;
-import ru.tnkv.dsrp.commands.MeCommand;
-import ru.tnkv.dsrp.commands.TodoCommand;
-import ru.tnkv.dsrp.commands.TryCommand;
+import ru.tnkv.dsrp.commands.*;
 import ru.tnkv.dsrp.utils.YamlManager;
 
 import java.util.logging.Level;
@@ -24,6 +21,7 @@ public final class Main extends JavaPlugin {
         this.getCommand("try").setExecutor(new TryCommand());
         this.getCommand("me").setExecutor(new MeCommand());
         this.getCommand("todo").setExecutor(new TodoCommand());
+        this.getCommand("hat").setExecutor(new HatCommand());
 
         this.getLogger().log(Level.INFO, "Включено.");
     }

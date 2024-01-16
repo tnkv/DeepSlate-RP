@@ -9,8 +9,6 @@ import ru.tnkv.dsrp.Main;
 import ru.tnkv.dsrp.utils.Style;
 import ru.tnkv.dsrp.utils.YamlManager;
 
-import java.util.Random;
-
 public class TryCommand implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, String[] args) {

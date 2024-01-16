@@ -1,19 +1,24 @@
-version: 1.2
+version: 13
 
 global:
   not-player: "&#bf616aЭта команда доступна только для игроков!"
 
 dice:
   incorrect-usage: "&#bf616aИспользуйте: /dice (Необязательно: МаксимальноеЗначение)"
-  message:  "&#d77bba{player} кинул кости и выбил &#a3be8c&l{result}"
+  message:  "&#5ac1c7{player} кинул кости и выбил &#a3be8c&l{result}"
 me:
   incorrect-usage: "&#bf616aИспользуйте: /me Действие"
-  message: "&#d77bba* {player} {action}"
+  message: "&#5ac1c7* {player} {action}"
 todo:
   incorrect-usage: "&#bf616aИспользуйте: /todo СделалЧто-то*Сказав"
-  message: "&#d77bba{player} &#eceff4{action}&#d77bba, сказав: &#eceff4{phrase}"
+  message: "&#5ac1c7{player} &#eceff4{action}&#5ac1c7, сказав: &#eceff4{phrase}"
 try:
-  default-action: "сделать что-то"
-  result-success: "&#a3be8c&lполучилось"
+  default-action: "что-то сделать"
+  result-success: "&#72be35&lполучилось"
   result-failure: "&#bf616a&lне получилось"
-  message: "&#d77bba{player} попытался {action}, и у него это {result}&#d77bba."
+  message: "&#5ac1c7{player} попытался {action}, и у него {result}&#5ac1c7."
+hat:
+  equipped: "&#5ac1c7Шляпа надета!"
+  unequipped: "&#5ac1c7Шляпа снята!"
+  need-item: "&#bf616aВ вашей руке нет предмета для того чтобы надеть его на голову."
+  changed: "&#5ac1c7Ваша шляпа была заменена и возвращена в инвентарь"

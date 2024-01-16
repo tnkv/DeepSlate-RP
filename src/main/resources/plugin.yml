@@ -7,23 +7,31 @@ website: "deepslate.ru"
 
 
 commands:
-   dice:
+  dice:
+    aliases: [ "кубик" ]
     usage: /dice
     permission: dsrp.use
     permission-message: "§cНет прав."
     description: "Бросить кости, через пробел можно указать максимальное возможное значение."
-   try:
-     usage: /try
-     description: "Попытка сделать что-то, через пробел можно указать действие."
-     permission: dsrp.use
-     permission-message: "§cНет прав."
-   me:
-     usage: /me
-     description: "Показать, что выполняешь какое-то действие."
-     permission: dsrp.use
-     permission-message: "§cНет прав."
-   todo:
-     usage: /todo
-     description: "Выполнять действие во время выполнения другого."
-     permission: dsrp.use
-     permission-message: "§cНет прав."
+  try:
+    aliases: [ "попытка" ]
+    usage: /try
+    description: "Попытка сделать что-то, через пробел можно указать действие."
+    permission: dsrp.use
+    permission-message: "§cНет прав."
+  me:
+    usage: /me
+    description: "Показать, что выполняешь какое-то действие."
+    permission: dsrp.use
+    permission-message: "§cНет прав."
+  todo:
+    usage: /todo
+    description: "Выполнять действие во время выполнения другого."
+    permission: dsrp.use
+    permission-message: "§cНет прав."
+  hat:
+    aliases: ["шляпа"]
+    usage: /hat
+    description: "Надевать любой предмет на голову"
+    permission: dsrp.use
+    permission-message: "§cНет прав."
