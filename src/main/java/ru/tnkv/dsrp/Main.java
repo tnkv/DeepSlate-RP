@@ -1,26 +1,24 @@
-package ru.tnkv.hcrpcmds;
+package ru.tnkv.dsrp;
 
 import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-import ru.tnkv.hcrpcmds.commands.DiceCommand;
-import ru.tnkv.hcrpcmds.commands.MeCommand;
-import ru.tnkv.hcrpcmds.commands.TodoCommand;
-import ru.tnkv.hcrpcmds.commands.TryCommand;
-import java.io.File;
+import ru.tnkv.dsrp.commands.DiceCommand;
+import ru.tnkv.dsrp.commands.MeCommand;
+import ru.tnkv.dsrp.commands.TodoCommand;
+import ru.tnkv.dsrp.commands.TryCommand;
+import ru.tnkv.dsrp.utils.YamlManager;
+
 import java.util.logging.Level;
 
 public final class Main extends JavaPlugin {
-    public static FileConfiguration config;
-
     @Override
     public void onEnable() {
         this.saveResource("config.yml", false);
+        this.saveResource("lang.yml", false);
 
-        config = YamlConfiguration.loadConfiguration(new File(this.getDataFolder() + "/config.yml"));
+        YamlManager.initialize(this.getDataFolder());
 
         this.getCommand("dice").setExecutor(new DiceCommand());
         this.getCommand("try").setExecutor(new TryCommand());

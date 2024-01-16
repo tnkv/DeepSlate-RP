@@ -1,0 +1,19 @@
+version: 1.2
+
+global:
+  not-player: "&#bf616aЭта команда доступна только для игроков!"
+
+dice:
+  incorrect-usage: "&#bf616aИспользуйте: /dice (Необязательно: МаксимальноеЗначение)"
+  message:  "&#d77bba{player} кинул кости и выбил &#a3be8c&l{result}"
+me:
+  incorrect-usage: "&#bf616aИспользуйте: /me Действие"
+  message: "&#d77bba* {player} {action}"
+todo:
+  incorrect-usage: "&#bf616aИспользуйте: /todo СделалЧто-то*Сказав"
+  message: "&#d77bba{player} &#eceff4{action}&#d77bba, сказав: &#eceff4{phrase}"
+try:
+  default-action: "сделать что-то"
+  result-success: "&#a3be8c&lполучилось"
+  result-failure: "&#bf616a&lне получилось"
+  message: "&#d77bba{player} попытался {action}, и у него это {result}&#d77bba."
